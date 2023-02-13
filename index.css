@@ -1,0 +1,118 @@
+:root {
+    --primary-color: rgb(255, 255, 255);
+    --secondary-color: rgb(214, 214, 214);
+    --accent-color: rgb(95, 183, 255);
+}
+
+@font-face {
+    font-family: SpaceMono;
+    src: url(./fonts/SpaceMono-Bold.ttf);
+}
+
+.nav {
+    margin: 1rem;
+}
+
+.nav .title {
+    display: block;
+    float: left;
+
+    width: 50%;
+
+    text-indent: 8px;
+    padding: 1.5px;
+    text-align: left;
+
+    transition: all .5s;
+    color: var(--accent-color);
+    opacity: 100%;
+
+    border-style: hidden hidden hidden solid;
+    border-color: var(--accent-color);
+    border-width: 8px;
+}
+
+.nav:hover .title {
+    transition: all .5s;
+    opacity: 75%;
+
+    border-width: 0;
+}
+
+
+.nav li {
+    transition: all 2s;
+    display: block;
+    float: left;
+    background-color: var(--accent-color);
+    width: 0px;
+}
+
+.nav:hover li {
+    transition: all 1s;
+
+    width: 8rem;
+}
+
+.nav a {
+    transition: all 1s;
+    display: block;
+    padding: 25px;
+
+    text-align: center;
+
+    color: var(--primary-color);
+
+    user-select: none;
+    cursor: pointer;
+
+    border-bottom-style: solid;
+    border-width: 0;
+    border-color: var(--primary-color);
+
+    text-decoration: none;
+}
+
+.nav a:hover {
+    transition: all .1s;
+    border-width: 4px;
+    border-color: var(--accent-color);
+    color: var(--accent-color);
+    background-color: var(--primary-color);
+}
+
+.nav .tooltip {
+    transition: all .1s;
+
+    display: none;
+    text-align: center;
+
+    font-size: small;
+
+    color: var(--accent-color);
+
+    background-color: var(--primary-color);
+}
+.nav .tooltip:hover {
+    transition: all .1s;
+    background-color: var(--primary-color);
+    color: var(--accent-color);
+}
+.nav li:hover .tooltip {
+    display: block;
+    cursor: pointer;
+}
+
+
+
+
+
+html {
+    font-family: SpaceMono, monospace;
+    background-color: var(--primary-color);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
